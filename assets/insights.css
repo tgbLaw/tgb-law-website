@@ -1,0 +1,28 @@
+/* TGB Law Legal Insights page only — isolated layout rules */
+.insights-listing{display:flex;flex-direction:column;gap:18px;padding-top:42px;padding-bottom:76px}
+.insight-card{display:grid;grid-template-columns:minmax(260px, .9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,48px);align-items:center;background:#fff;border:1px solid #dce9dc;border-radius:16px;overflow:hidden;box-shadow:0 8px 26px rgba(0,60,25,.045);min-width:0}
+.insight-card-image{display:block;min-width:0;aspect-ratio: 3 / 2;overflow:hidden;background:#f1f8ef}
+.insight-card-image img{display:block;width:100%;height:100%;object-fit:cover}
+.insight-card-copy{min-width:0;padding:28px 30px 28px 0}
+.insight-card-copy h2{font:600 clamp(22px,2.4vw,30px)/1.2 var(--serif);color:#005b2d;margin:10px 0 12px}
+.insight-card-copy h2 a{color:inherit;text-decoration:none}
+.insight-card-copy h2 a:hover{color:#078b43}
+.insight-card-copy>p:not(.eyebrow){color:#505850;line-height:1.7;margin-bottom:14px}
+@media(max-width:760px){
+ .insights-listing{gap:12px;padding:28px 18px 48px}
+ .insight-card{grid-template-columns:minmax(0,42%) minmax(0,58%);gap:0;border-radius:10px;align-items:stretch;min-height:0}
+ .insight-card-image{aspect-ratio:4 / 3;align-self:center;height:auto;min-height:0}
+ .insight-card-image img{width:100%;height:100%;aspect-ratio:4 / 3;object-fit:cover}
+ .insight-card-copy{padding:14px 12px;align-self:center}
+ .insight-card-copy .eyebrow{font-size:7px;letter-spacing:1px;margin-bottom:5px}
+ .insight-card-copy h2{font-size:clamp(14px,3.7vw,18px);line-height:1.2;letter-spacing:-.25px;margin:4px 0 6px}
+ .insight-card-copy>p:not(.eyebrow){font-size:10px;line-height:1.45;margin-bottom:7px}
+ .insight-card-copy .arrow-link{font-size:9px;padding-bottom:2px}
+}
+@media(max-width:380px){
+ .insights-listing{padding-left:12px;padding-right:12px}
+ .insight-card{grid-template-columns:40% 60%}
+ .insight-card-copy{padding:10px 9px}
+ .insight-card-copy h2{font-size:13px}
+ .insight-card-copy>p:not(.eyebrow){font-size:9px}
+}
