@@ -31,3 +31,13 @@ Open `index.html` in a web browser. The site uses Google Fonts; if offline, fall
 After the GitHub Pages site is working, add `www.tgblawtt.com` under **Settings → Pages → Custom domain**. Then update DNS records at the domain registrar exactly as GitHub Pages instructs. Do not change existing DNS records until you know which services (such as email) depend on them. Enable Enforce HTTPS once it becomes available.
 
 This is a static website. It does not contain a working enquiry form, client portal, booking system, or database. The contact details are intentionally placeholders pending confirmation.
+
+
+## Updated visual identity
+
+This version refreshes the site using the supplied TGB Law logo and office photograph.
+The visual palette is green, lime green, black and white. The existing six-page
+structure and content have been retained, with responsive styling updates.
+
+Before publishing, review all legal copy, privacy wording, contact details and
+professional-conduct requirements for accuracy and suitability.
