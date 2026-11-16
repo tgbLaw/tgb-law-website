@@ -132,3 +132,99 @@ body{background:#fff;color:#111}
 .profile-bio p{font-size:13px;line-height:1.9;color:#59665c;margin:0 0 12px}
 @media(max-width:800px){.profile-panel{grid-template-columns:145px minmax(0,1fr);align-items:start}.profile-bio p{font-size:12px}}
 @media(max-width:520px){.profile-panel{grid-template-columns:1fr}.profile-photo-wrap{margin-bottom:4px}.profile-content h2{font-size:27px}}
+
+
+/* =========================================
+   TGB LAW – LEGAL INSIGHTS ARTICLE LAYOUT
+   ========================================= */
+
+/* Article heading area */
+.article-hero {
+  width: calc(100% - 40px);
+  max-width: 1100px;
+  margin: 42px auto 0;
+}
+
+.article-hero-copy {
+  max-width: 1000px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.article-hero-copy h1 {
+  font-size: clamp(32px, 4.5vw, 56px);
+  line-height: 1.12;
+  max-width: 100%;
+  margin: 12px auto 16px;
+  overflow-wrap: break-word;
+}
+
+.article-hero-copy .page-intro {
+  max-width: 680px;
+  margin: 0 auto 14px;
+  line-height: 1.7;
+}
+
+/* Featured article image */
+.article-hero > img {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* Main article reading column */
+.legal-article {
+  width: calc(100% - 40px);
+  max-width: 760px;
+  margin: 32px auto 64px;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.legal-article p {
+  margin: 0 0 18px;
+}
+
+.legal-article blockquote {
+  margin: 28px 0;
+  padding: 12px 20px;
+  border-left: 3px solid var(--lime, #8acb35);
+  color: #315c45;
+  line-height: 1.7;
+}
+
+.article-endnote {
+  margin-top: 32px;
+  padding-top: 22px;
+  border-top: 1px solid #e3e9e1;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Tablet and mobile adjustments */
+@media (max-width: 760px) {
+  .article-hero {
+    width: calc(100% - 32px);
+    margin-top: 28px;
+  }
+
+  .article-hero-copy {
+    margin-bottom: 20px;
+  }
+
+  .article-hero-copy h1 {
+    font-size: clamp(29px, 7vw, 40px);
+    line-height: 1.15;
+  }
+
+  .legal-article {
+    width: calc(100% - 36px);
+    margin: 26px auto 48px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
